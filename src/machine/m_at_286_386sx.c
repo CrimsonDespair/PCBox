@@ -630,7 +630,7 @@ machine_at_dataexpert386sx_init(const machine_t *model)
 }
 
 int
-machine_at_dataexpert386sx_init(const machine_t *model)
+machine_at_opti495_ami_init(const machine_t *model)
 {
     int ret;
 
