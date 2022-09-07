@@ -4559,6 +4559,43 @@ const machine_t machines[] = {
         .snd_device = NULL,
         .net_device = NULL
     },
+    /* By Crimson Despair */
+    {
+        .name = "[OPTi 495] DataExpert OPTI-495WB",
+        .internal_name = "ami495",
+        .type = MACHINE_TYPE_386DX_486,
+        .chipset = MACHINE_CHIPSET_OPTI_495,
+        .init = machine_at_opti495_ami_init,
+        .pad = 0,
+        .pad0 = 0,
+        .pad1 = MACHINE_AVAILABLE,
+        .pad2 = 0,
+        .cpu = {
+            .package = CPU_PKG_386DX | CPU_PKG_SOCKET1,
+            .block = CPU_BLOCK_NONE,
+            .min_bus = 0,
+            .max_bus = 0,
+            .min_voltage = 0,
+            .max_voltage = 0,
+            .min_multi = 0,
+            .max_multi = 0
+        },
+        .bus_flags = MACHINE_VLB,
+        .flags = MACHINE_IDE,
+        .ram = {
+            .min = 1024,
+            .max = 32768,
+            .step = 1024
+        },
+        .nvrmask = 127,
+        .kbc = KBC_UNKNOWN,
+        .kbc_p1 = 0,
+        .gpio = 0,
+        .device = NULL,
+        .vid_device = NULL,
+        .snd_device = NULL,
+        .net_device = NULL
+    },
     /* Has AMIKey F KBC firmware (it's just the MR BIOS for the above machine). */
     {
         .name = "[OPTi 495] DataExpert SX495 (MR BIOS)",
